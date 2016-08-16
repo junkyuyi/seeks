@@ -1,0 +1,13 @@
+
+<form action="/users/new" method="POST">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<label for="em">Email</label>	
+	<input id="em" type="text" name="user[email]"><br>
+	<label for="nm">Name</label>
+	<input id="nm" type="text" name="user[name]"><br>
+	<label for="pw1">Password</label>
+	<input id="pw1" type="password" name="user[password]"><br>
+	<label for="pw2">Password Confirmation</label>
+	<input id="pw2" type="password" name="user[password_confirmation]"><br>
+	<input type="submit" value="Join">
+</form>
