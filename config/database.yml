@@ -19,6 +19,8 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
+  username: ubuntu
+  password:
   pool: 5
 
 development:
@@ -81,5 +83,5 @@ test:
 production:
   <<: *default
   database: seeks_production
-  username: seeks
-  password: <%= ENV['SEEKS_DATABASE_PASSWORD'] %>
+  # username: seeks
+  # password: <%= ENV['SEEKS_DATABASE_PASSWORD'] %>
